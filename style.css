@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+html{
+    font-size: 1.6rem;
+}
+
+/*=====Header======*/
+
+.header{
+    width: 100vw;
+    height: 9.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--navigation{
+    width: 100%;
+    height: 8.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5vw;
+}
+
+.navigation--logo{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.navigation--logo h1{
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+}
+
+.navigation--list{
+    display: flex;
+    list-style: none;
+    gap: 3.5rem;
+}
+
+.navigation--list svg{
+    width: 2rem;
+    cursor: pointer;
+}
+
+/*=====Banner======*/
+
+.section--banner{
+    background-image: url(./assets/banner1.svg);
+    width: 100vw;
+    height: 37.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner--image{
+    max-width: 55rem;
+    min-width: 23rem;
+    padding-inline: 3rem;
+}
+
+/*=====Products======*/
+
+.section-promotion{
+    width: 100vw;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 70px;
+}
+
+.promotion--title-1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.promotion--title-2{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.products-cards{
+    width: 100vw;
+    padding-inline: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10vw;
+    margin-bottom: 116px;
+}
+
+.product-card{
+    height: 390px;
+    width: 300px;
+}
+
+.card--image img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card--title{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 23px;
+    margin-bottom: 11px;
+}
+
+.card--price{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.card--price span{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #5ca720;
+}
+
+/*=====Footer======*/
+
+.footer{
+    width: 100vw;
+    padding-inline: 7vw;
+    background-color: #f9f9f9;
+}
+
+.footer--newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px 50px 0px;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.footer--list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer--list-item a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #161616;
+}
+
+.title-news{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.input--news{
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+
+.input-news::placeholder{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.news--btn{
+    width: 152px;
+    height: 54px;
+    background-color: #5ca720;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer--social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 50px;
+}
+
+.medias{
+    display: flex;
+    gap: 20px;
+}
+
+.payment{
+    display: flex;
+    gap: 20px;
+}
+
+@media(max-width:1000px){
+    .footer--newsletter{
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:645px){
+    .news--btn{
+        width: 400px;
+        height: 50px;
+    }
+}
+
+@media(max-width:450px){
+
+    .section-promotion{
+        padding-inline: 20px;
+    }
+
+    .product-card{
+        height: 390px;
+        width: 0px;
+    }
+
+    .news--btn{
+        width: 280px;
+        height: 40px;
+    }
+
+    .input--news{
+        width: 280px;
+        height: 40px;
+    }
+
+    .footer--social-media{
+        gap: 10px;
+    }
+
+    .footer--social-media svg{
+        width: 30px;
+    }
+}
